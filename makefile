@@ -13,3 +13,7 @@ utils.o : defs.h
 .phony : clean
 clean :
 	rm edit $(objects)
+//second way
+$(objects) : defs.h   //merger dependencies
+kib.o command.o files.o : command.h
+display.o insert.o search.p files.o : buffer.h
