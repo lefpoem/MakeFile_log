@@ -1,3 +1,4 @@
+#.PHONY 会执行同名目标代码
 all : prog1 prog2 prog3 #target can depend
 .PHONY:all
 prog1 : prog1.o utils.o
