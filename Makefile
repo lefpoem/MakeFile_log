@@ -12,7 +12,7 @@ files.o : defs.h buffer.h command.h
 utils.o : defs.h
 .phony : clean
 clean :
-	rm edit $(objects)
+	rm edit $(objects)#-rm impulsory execute even something happen
 #second way
 $(objects) : defs.h   #merger dependencies
 kib.o command.o files.o : command.h
